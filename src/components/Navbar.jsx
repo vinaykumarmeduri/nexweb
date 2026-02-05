@@ -42,7 +42,7 @@ export default function Navbar() {
           {/* LOGO */}
           <Link to="/" className="logo-container">
             <img
-              src="/src/assets/NexWeb_logo.png"
+              src="../src/assets/NexWeb_logo.png"
               alt="NexWeb Logo"
               className="logo-img"
             />
@@ -90,3 +90,4 @@ export default function Navbar() {
     </>
   );
 }
+
