@@ -16,11 +16,11 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/nexweb" element={<Home />} />
+        <Route path="nexweb/about" element={<About />} />
+        <Route path="nexweb/services" element={<Services />} />
+        <Route path="nexweb/portfolio" element={<Portfolio />} />
+        <Route path="nexweb/contact" element={<Contact />} />
       </Routes>
     </AnimatePresence>
   );
