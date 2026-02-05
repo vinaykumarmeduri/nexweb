@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "../assets/NexWeb_logo.png"; // ✅ IMPORTANT FIX
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -18,21 +19,20 @@ export default function Navbar() {
 
   return (
     <>
-      {/* PREMIUM CONTACT BAR */}
+      {/* TOP CONTACT BAR */}
       <motion.div
         className="top-contact-bar"
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        📧
+        📧{" "}
         <a
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=technologiesnexweb@gmail.com&su=NexWeb%20Website%20Enquiry"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  technologiesnexweb@gmail.com
-</a>
-
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=technologiesnexweb@gmail.com&su=NexWeb%20Website%20Enquiry"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          technologiesnexweb@gmail.com
+        </a>
       </motion.div>
 
       {/* NAVBAR */}
@@ -42,7 +42,7 @@ export default function Navbar() {
           {/* LOGO */}
           <Link to="/" className="logo-container">
             <img
-              src="../src/assets/NexWeb_logo.png"
+              src={logo}
               alt="NexWeb Logo"
               className="logo-img"
             />
@@ -90,4 +90,3 @@ export default function Navbar() {
     </>
   );
 }
-
